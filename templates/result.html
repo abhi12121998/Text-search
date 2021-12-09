@@ -1,0 +1,64 @@
+<div class="main">
+<style>
+    input{
+
+    border-radius: 25px;
+
+    margin-left: 30%;
+    margin-top: 2%;
+    height: 10%;
+    width: 500px;
+    border:1px solid #eaeaea;
+    outline:none;
+}
+input:hover{
+    border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9;
+}
+input:focus{
+    border-color:#4d90fe;
+}
+
+input[type="submit"] {
+
+
+    background: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    color: #757575;
+    cursor: default;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100px;
+    padding: 0 16px;
+    height:36px;
+
+
+  position: absolute;
+  top: 2%;
+
+  margin-left:5%
+
+
+
+}
+input[type="submit"]:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+}
+
+
+
+
+</style>
+    <form class="" action="data"  method="post">
+    <input type="text" name="query" id="query" value='{{ query }}' placeholder="enter your query here" required>
+    <input type = "submit" name="" value="Search">
+
+</form>
+{% for table in tables %}
+
+            {{ table|safe }}
+{% endfor %}
+    </div>

@@ -1,0 +1,69 @@
+<div class="main">
+<style>
+    input[type="text"]{
+
+    border-radius: 25px;
+
+    margin-left: 30%;
+    margin-top: 2%;
+    height: 10%;
+    width: 500px;
+    border:1px solid #eaeaea;
+    outline:none;
+}
+input:hover{
+    border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9;
+}
+input[type="file"] {
+
+    top: 2%
+    color: #222;
+}
+input:focus{
+    border-color:#4d90fe;
+}
+
+input[type="submit"] {
+
+
+    background: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    color: #757575;
+    cursor: default;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100px;
+    padding: 0 16px;
+    height:36px;
+
+
+  position: absolute;
+  top: 40%;
+
+  margin-left:5%
+
+
+
+}
+input[type="submit"]:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+}
+
+
+
+
+</style>
+
+
+<form class="" action="data" method="post" enctype="multipart/form-data">
+    <input type="file" name="csvfile" value="" required><br>
+    <label for="column_name">column name</label>
+    <input type="text" name="column_name" id="column_name" required><br>
+    <label for="query">enter query </label>
+    <input type="text" name="query" id="query" value="" required><br>
+    <input type = "submit" name="" value="Submit">
+</form>
