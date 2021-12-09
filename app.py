@@ -1,8 +1,7 @@
 import flask
 import pandas as pd
 import numpy as np
-import nltk
-nltk.download()
+
 from nltk.stem.porter import PorterStemmer
 from sklearn.feature_extraction.text import TfidfVectorizer
 import re
